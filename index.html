@@ -12,14 +12,5 @@
   <body>
     <div id="root"></div>
     
-    <script>
-      if('serviceWorker' in navigator){                                 //o service worker começa aqui. Primeiro verificamos se o browser tem suporte, e caso sim entramos no if 
-        window.addEventListener('load', () => {                         //assim habilitamos a inserção do nosso próprio service worker
-          navigator.serviceWorker.register('./src/serviceWorkers/core.js')       //e assim o inserimos, propriamente dito
-            .then((reg) => console.log('Sucesso: ', reg.scope))
-            .catch((err) => console.log('Falha: ', err))                        
-        })
-      }
-  </script>
   </body>
 </html>
