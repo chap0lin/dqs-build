@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="data:application/json;base64,ew0KICAic2hvcnRfbmFtZSI6ICJEb20gcXVlIHNob3QiLA0KICAibmFtZSI6ICJEb20gcXVlIHNob3Q6IERpdmVyc8OjbyBlIEpvZ29zIiwNCiAgImljb25zIjogWyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICB7DQogICAgICAgICAgInNyYyI6ICIuL3NyYy9hc3NldHMvbG9nby5wbmciLA0KICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsDQogICAgICAgICAgInNpemVzIjogIjE1N3gyNDkiLA0KICAgICAgICAgICJwdXJwb3NlIjogIm1hc2thYmxlIGFueSINCiAgICAgIH0NCiAgXSwNCiAgInN0YXJ0X3VybCI6ICIuIiwNCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsDQogICJ0aGVtZV9jb2xvciI6ICIjMTcwQzMyIiwNCiAgImJhY2tncm91bmRfY29sb3IiOiIjMTcwQzMyIg0KfQ==">
+    <title>Vite + React + TS</title>
+    <script type="module" crossorigin src="/assets/index.52b38427.js"></script>
+    <link rel="stylesheet" href="/assets/index.0cd53743.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      if('serviceWorker' in navigator){                                 //o service worker começa aqui. Primeiro verificamos se o browser tem suporte, e caso sim entramos no if 
+        window.addEventListener('load', () => {                         //assim habilitamos a inserção do nosso próprio service worker
+          navigator.serviceWorker.register('./src/serviceWorkers/core.js')       //e assim o inserimos, propriamente dito
+            .then((reg) => console.log('Sucesso: ', reg.scope))
+            .catch((err) => console.log('Falha: ', err))                        
+        })
+      }
+  </script>
+  </body>
+</html>

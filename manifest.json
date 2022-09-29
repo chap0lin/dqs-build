@@ -1,0 +1,16 @@
+{
+  "short_name": "Dom que shot",
+  "name": "Dom que shot: Diversão e Jogos",
+  "icons": [                                   
+      {
+          "src": "./src/assets/logo.png",
+          "type": "image/png",
+          "sizes": "157x249",
+          "purpose": "maskable any"
+      }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#170C32",
+  "background_color":"#170C32"
+}
