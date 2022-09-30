@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/dqs-build/sw.js', { scope: '/dqs-build/' })})}
